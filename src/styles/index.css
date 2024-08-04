@@ -10,3 +10,39 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  padding-top: 20px;
+  box-sizing: border-box;
+  background-color: grey;
+}
+.seconds-counter {
+  display: flex;
+  align-items: center;
+  font-size: 5vw;
+}
+.icon {
+  margin-right: 10px;
+}
+.digit {
+  margin: 0 5px;
+  padding: 10px;
+  background: white;
+  border-radius: 5px;
+}
+@media (max-width: 768px) {
+  .app {
+    padding-top: 10px;
+  }
+  .seconds-counter {
+    font-size: 8vw;
+  }
+}
+@media (max-width: 400px) {
+  .seconds-counter {
+    font-size: 12vw;
+  }
+}
